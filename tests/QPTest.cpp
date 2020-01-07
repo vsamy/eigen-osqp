@@ -1,3 +1,7 @@
+/*
+ * Copyright 2018-2019 CNRS-UM LIRMM, CNRS-AIST JRL
+ */
+
 #define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE Eigen_OSQP
 #include <boost/test/unit_test.hpp>
@@ -5,7 +9,7 @@
 #include <boost/test/floating_point_comparison.hpp>
 #include <Eigen/Dense>
 
-#include "eigen-osqp/OSQP.h"
+#include <eigen-osqp/OSQP.h>
 #include "systems.h"
 
 BOOST_FIXTURE_TEST_CASE(OSQP_DENSE, QP1Dense)
