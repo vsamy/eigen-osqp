@@ -8,12 +8,7 @@ template <typename T>
 Index triangular_size(T mat)
 {
   assert(mat.rows() == mat.cols());
-
-  Index size = 0;
-  for (Index i = 1; i <= mat.rows(); ++i)
-    size += i;
-
-  return size;
+  return (mat.rows() * (mat.rows() + 1)) / 2;
 }
 
 CSCMatrix::CSCMatrix()
